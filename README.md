@@ -21,6 +21,6 @@ mkdir go-mobile-basic2
 cd go-mobile-basic2
 go mod init go-mobile-basic2
 go get golang.org/x/mobile/example/basic
-gomobile build -androidapi 19 golang.org/x/mobile/example/basic
+gomobile build -ldflags "-w" -androidapi 19 golang.org/x/mobile/example/basic
 gomobile install -androidapi 19 golang.org/x/mobile/example/basic
 ```
